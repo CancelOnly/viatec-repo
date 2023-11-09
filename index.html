@@ -14,11 +14,11 @@
     </header>
     
     <ul class="navigation">
-        <li><a href="#home">Topo da Página</a></li>
-        <li><a href="#about">Sobre Nós</a></li>
-        <li><a href="#company">Empresas</a></li>
-        <li><a href="#products">Produtos</a></li>
-        <li><a href="#contact">Contato</a></li>
+        <li><a href="#home" onclick="toggleMenu();">Topo da Página</a></li>
+        <li><a href="#about" onclick="toggleMenu();">Sobre Nós</a></li>
+        <li><a href="#company" onclick="toggleMenu();">Empresas</a></li>
+        <li><a href="#products" onclick="toggleMenu();">Produtos</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contato</a></li>
         
     </ul>
     
@@ -169,7 +169,7 @@
     </div>
     
     <!-- coluna 4 -->
-    <div class="postColumn">
+    <!-- <div class="postColumn">
             <div class="postBx">
                 <div class="imgBx">
                     <img src="./images/placeholder.jpg" class="cover" alt="">
@@ -197,15 +197,47 @@
                     <a href="#" class="btn">Faça seu Orçamento Aqui</a>
                 </div>
             </div>
-    </div>
+    </div> -->
     </section>
-   
-     
-        
-    
+
     <!-- Contato -->
     
-     <section class="contact" id="contact"></section>
+     <section class="contact" id="contact">
+        <div class="title">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco ou envie um e-mail para @.</p>
+            <P>Se preferir, preencha o formulario ao lado.</P>
+            <p>(54) xxxx-xxxx</p>
+        </div>
+        
+        <div class="contactForm">
+            <div class="row">
+                <input type="text" name="" placeholder="Nome">
+                <input type="text" name="" placeholder="Número">
+            </div>
+            <div class="row2">
+                <input type="text" name="" placeholder="E-mail">
+            </div>
+            <div class="row2">
+                <textarea name="" placeholder="Mensagem"></textarea>
+            </div>
+            <div class="row2">
+                <input type="submit" value="send" class="btn">
+        </div>
+     </section>
     
+     <!-- Footer -->
+     <footer>
+        <img src="./images/logo.jpg" class="logo">
+        <ul class="footerMenu">
+            <li><a href="#home">Topo da Página</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#company">Empresas</a></li>
+            <li><a href="#products">Produtos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+        <p class="copyrightText">2023 Viatec Brasil</p>
+     </footer>
+     
 </body>
 </html>
