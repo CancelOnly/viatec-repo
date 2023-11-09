@@ -13,9 +13,38 @@ window.addEventListener('scroll', function () {
     header.classList.toggle('sticky', window.scrollY > 0)
 })
 
-//
+
 
 function toggleMenu() {
     menuToggle.classList.remove('active');
     navigation.classList.remove('active');
 }
+
+//
+
+// const logo = document.querySelector('.logo')
+
+// window.onscroll = function () { scrollFunction() };
+
+// function scrollFunction() {
+//     if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+//         navigation.style.maxHeight = "10px";
+//         navigation.style.filter = "brightness(.6)";
+//         logo.style.maxHeight = "180px";
+//         logo.style.maxWidth = "280px";
+//         logo.style.marginTop = "-3.5rem";
+//         media.style.marginTop = "5rem";
+//         media.style.fontSize = "1.3rem";
+//     }
+
+//     else {
+//         navigation.style.maxHeight = "15px";
+//         navigation.style.filter = "brightness(.9)";
+//         logo.style.maxHeight = "375px";
+//         logo.style.maxWidth = "450px";
+//         logo.style.marginTop = "8rem";
+//         media.style.marginTop = "25rem";
+//         media.style.fontSize = "1.8rem";
+
+//     }
+// }

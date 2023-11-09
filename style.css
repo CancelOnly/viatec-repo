@@ -43,7 +43,7 @@ header.sticky {
 .logo {
   position: relative;
   display: inline-block;
-  height: 4em;
+  height: 3.5em;
   width: auto;
   cursor: pointer;
 }
@@ -295,6 +295,7 @@ p {
   min-height: 400px;
 }
 
+
 .products {
   background: var(--orange);
   position: relative;
@@ -453,6 +454,25 @@ footer .footerMenu li a {
   color: var(--white);
   text-align: center;
 }
+
+.company {
+  background: var(--black);
+  color: #fff;
+}
+
+.company h2::before {
+  background: #fff;
+}
+
+.company h3,
+.company h2 {
+  color: white;
+  
+}
+
+.company .logo-company {
+  height: 50px;
+  }
 
 /* Mobile responsive */
 
