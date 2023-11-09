@@ -118,7 +118,19 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* border-radius: 0.5rem; */
+  border-radius: 0.5em;
+
+  /* borda de todas as imagens  */
+}
+
+.cover-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
   /* borda de todas as imagens  */
 }
 
@@ -303,7 +315,7 @@ p {
 .products .contentBx .postColumn .postBx {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 250px;
   margin-top: 20px;
 }
 
@@ -463,15 +475,14 @@ footer .footerMenu li a {
 
   .about .contentBx {
     grid-template-columns: repeat(1, 1fr);
-    height: 600px;
   }
 
-  .post .contentBx {
+  .products .contentBx {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .post .content .postColumn .postBx {
-    height: 300px;
+  .products .content .postColumn .postBx {
+    height: 600px;
   }
 
   .contact .contactForm .row {
