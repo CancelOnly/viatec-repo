@@ -118,7 +118,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   /* borda de todas as imagens  */
 }
 
@@ -258,6 +258,7 @@ section {
 }
 
 p {
+  font-size: 18px;
   font-weight: 300;
   text-align: justify;
 }
@@ -302,7 +303,7 @@ p {
 .products .contentBx .postColumn .postBx {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 400px;
   margin-top: 20px;
 }
 
@@ -336,6 +337,10 @@ p {
   color: var(--black);
 }
 
+.mgt60 {
+  margin: 20px;
+}
+
 /* .products .contentBx .postColumn .postBx .textBx .btn {
   cor do botao 
 } */
@@ -357,6 +362,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .contact .contactForm {
@@ -405,7 +411,6 @@ p {
   height: 150px;
 }
 
-
 footer {
   padding: 100px;
   display: flex;
@@ -435,4 +440,61 @@ footer .footerMenu li a {
 .copyrightText {
   color: var(--white);
   text-align: center;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 991px) {
+  header {
+    padding: 20px 20px;
+  }
+
+  header.sticky {
+    padding: 10px 20px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .banner .contentBx {
+    padding: 40px 30px;
+  }
+
+  .about .contentBx {
+    grid-template-columns: repeat(1, 1fr);
+    height: 600px;
+  }
+
+  .post .contentBx {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .post .content .postColumn .postBx {
+    height: 300px;
+  }
+
+  .contact .contactForm .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer {
+    padding: 40px 20px;
+  }
+
+  footer .footerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  footer .footerMenu li a {
+    margin: 10px 0;
+  }
+
+  .title {
+    padding-top: 50px;
+  }
 }
