@@ -125,13 +125,31 @@ section {
 
 .cover-main {
   position: absolute;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-
   /* borda de todas as imagens  */
+}
+
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 .banner {
@@ -139,6 +157,10 @@ section {
   justify-content: center;
   align-items: center;
 }
+
+/* .mySlides {
+  
+} */
 
 .banner .contentBx {
   position: relative;
@@ -295,7 +317,6 @@ p {
   min-height: 400px;
 }
 
-
 .products {
   background: var(--orange);
   position: relative;
@@ -330,7 +351,8 @@ p {
   padding: 20px;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: center;
+  /* text-align: justify; */
   flex-direction: column;
   transition: 0.25s;
   opacity: 0;
@@ -424,6 +446,12 @@ p {
   height: 150px;
 }
 
+.mail-ui {
+  color: var(--orange);
+  cursor: pointer;
+  text-decoration: none;
+}
+
 footer {
   padding: 100px;
   display: flex;
@@ -467,12 +495,11 @@ footer .footerMenu li a {
 .company h3,
 .company h2 {
   color: white;
-  
 }
 
 .company .logo-company {
   height: 50px;
-  }
+}
 
 /* Mobile responsive */
 
