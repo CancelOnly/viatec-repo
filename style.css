@@ -7,7 +7,6 @@
   /* font-family: "Neue Montreal"; */
   font-family: "Montserrat";
   scroll-behavior: smooth;
-   
 }
 
 :root {
@@ -49,54 +48,27 @@ header.sticky {
   cursor: pointer;
 }
 
-.menuToggle {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  background: url(./images/menu.png);
-  background-size: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-}
-
-.menuToggle.active {
-  background: url(./images/close.png);
-  background-size: 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .navigation {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
-  background: var(--blue);
+  height: 3.5em;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  flex-direction: column;
-  z-index: 999;
-  transition: 0.25s;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.navigation.active {
-  opacity: 1;
-  visibility: visible;
+  flex-direction: row;
+  gap: 1em;
+  z-index: 1000;
 }
 
 .navigation li {
   list-style: none;
-  margin: 10px 0;
 }
 
 .navigation li a {
-  color: var(--white);
-  font-size: 1.5em;
+  color: var(--blue);
+  font-size: 1em;
   /* letter-spacing: 4px; */
   display: inline-block;
   font-weight: 500;
@@ -104,19 +76,13 @@ header.sticky {
   text-transform: uppercase;
 }
 
-  .navigation .socials {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .navigation .socials a {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 50px;
-  }
+.navigation li a:hover {
+  color: var(--orange);
+}
+
+.navigation .socials {
+  margin-top: -20px;
+}
 
 section {
   position: relative;
@@ -479,19 +445,19 @@ footer {
   border-top: 1px solid var(--black);
 }
 
-  footer .footerSocials {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  footer .footerSocials a {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 30px;
-  }
+footer .footerSocials {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer .footerSocials a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 30px;
+}
 
 footer .footerMenu {
   display: flex;
@@ -540,7 +506,6 @@ footer .footerMenu li a {
   display: flex;
   width: 80%;
   justify-content: start;
-  
 }
 
 /* Mobile responsive */
@@ -549,7 +514,76 @@ footer .footerMenu li a {
   /* * {
      overflow-x: hidden;
   } */
-  
+
+  .menuToggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url(./images/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .menuToggle.active {
+    background: url(./images/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999;
+    transition: 0.25s;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .navigation.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navigation li {
+    list-style: none;
+    margin: 10px 0;
+  }
+
+  .navigation li a {
+    color: var(--white);
+    font-size: 1.5em;
+    /* letter-spacing: 4px; */
+    display: inline-block;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .navigation .socials {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .navigation .socials a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 50px;
+  }
+
   header {
     padding: 20px 20px;
   }
