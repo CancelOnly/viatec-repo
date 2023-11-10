@@ -12,7 +12,7 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 2000); // Change image every 10 seconds
+    setTimeout(showSlides, 10000); // Change image every 10 seconds
 }
 
 // toggle menu hamburguer
@@ -37,8 +37,18 @@ function toggleMenu() {
     navigation.classList.remove('active');
 }
 
+// Scroll reveal
 
+const scrollRevealOption = {
+    distance: "50px",
+    origin: "bottom",
+    duration: 1000,
+}
 
+ScrollReveal().reveal(".contentBx", scrollRevealOption);
+ScrollReveal().reveal(".title", scrollRevealOption);
+ScrollReveal().reveal(".content", scrollRevealOption);
+ScrollReveal().reveal(".contactForm", scrollRevealOption);
 
 //
 
