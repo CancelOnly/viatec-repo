@@ -62,7 +62,6 @@ header.sticky {
   z-index: 1000;
 }
 
-
 .navigation li {
   list-style: none;
 }
@@ -512,10 +511,9 @@ footer .footerMenu li a {
 /* Mobile responsive */
 
 @media (max-width: 991px) {
-  /* * {
-     overflow-x: hidden;
-  } */
-
+  * {
+    overflow-x: hidden;
+  }
 
   header {
     padding: 20px 20px;
@@ -528,7 +526,7 @@ footer .footerMenu li a {
   section {
     padding: 20px;
   }
-  
+
   .menuToggle {
     position: relative;
     width: 30px;
