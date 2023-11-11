@@ -49,6 +49,7 @@ ScrollReveal().reveal(".contentBx", scrollRevealOption);
 ScrollReveal().reveal(".title", scrollRevealOption);
 ScrollReveal().reveal(".content", scrollRevealOption);
 ScrollReveal().reveal(".contactForm", scrollRevealOption);
+ScrollReveal().reveal(".cardContainer", scrollRevealOption);
 
 //
 
