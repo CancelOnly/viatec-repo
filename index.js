@@ -51,31 +51,30 @@ ScrollReveal().reveal(".content", scrollRevealOption);
 ScrollReveal().reveal(".contactForm", scrollRevealOption);
 ScrollReveal().reveal(".cardContainer", scrollRevealOption);
 
-//
 
-// const logo = document.querySelector('.logo')
+// smtpJS config
 
-// window.onscroll = function () { scrollFunction() };
-
-// function scrollFunction() {
-//     if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
-//         navigation.style.maxHeight = "10px";
-//         navigation.style.filter = "brightness(.6)";
-//         logo.style.maxHeight = "180px";
-//         logo.style.maxWidth = "280px";
-//         logo.style.marginTop = "-3.5rem";
-//         media.style.marginTop = "5rem";
-//         media.style.fontSize = "1.3rem";
-//     }
-
-//     else {
-//         navigation.style.maxHeight = "15px";
-//         navigation.style.filter = "brightness(.9)";
-//         logo.style.maxHeight = "375px";
-//         logo.style.maxWidth = "450px";
-//         logo.style.marginTop = "8rem";
-//         media.style.marginTop = "25rem";
-//         media.style.fontSize = "1.8rem";
-
-//     }
-// }
+function sendEmail() {
+    Email.send({
+        SecureToken: "",
+        Host: "smtp.elasticemail.com",
+        Username: "username",
+        Password: "password",
+        To: 'them@website.com',
+        From: document.getElementById('email').value,
+        Subject: "Novo Contato",
+        Body: "Nome: " + document.getElementById('name').value
+        + "<br> Email: " + document.getElementById('email').value
+        + "<br> Telefone: " + document.getElementById('phone').value
+        + "<br> Mensagem: " + document.getElementById('message').value
+    }).then(
+        message => {
+            if(message=='OK'){
+                swal("Good job!", "Suas informações foram enviadas com sucesso!", "success");
+            }
+            else {
+                swal("Error", "Suas informações não foram enviadas", "error");
+            }
+        }
+    );
+}

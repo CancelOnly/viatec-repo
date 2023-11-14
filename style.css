@@ -123,7 +123,7 @@ section {
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
 }
 
 @keyframes fade {
@@ -140,10 +140,6 @@ section {
   justify-content: center;
   align-items: center;
 }
-
-/* .mySlides {
-  
-} */
 
 .banner .contentBx {
   position: relative;
@@ -251,16 +247,18 @@ section {
   font-weight: 500;
   font-size: 1.7em;
   text-transform: uppercase;
-  color: var(--black);
+  
 }
 
-.title h2:before {
+.title h2::before {
   content: "";
   position: absolute;
   bottom: -10px;
   left: 40%;
   width: 40px;
   height: 6px;
+  overflow: scroll;
+
 }
 
 .title h3 {
@@ -424,7 +422,7 @@ p {
 } */
 
 .mgt60 {
-  margin: 20px;
+  margin: 60px;
 }
 
 /* .products .contentBx .postColumn .postBx .textBx .btn {
