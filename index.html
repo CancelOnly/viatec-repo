@@ -2,21 +2,14 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="lightbox-plus-jquery.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    
-   
     <script defer src="index.js"></script>
     
-    <title>Viatec Brasil</title>
-    <link rel="shortcut icon" href="images/logo/favicon.png" type="image/x-icon">
-    
-    <!-- w.app link -->
+     <!-- w.app link -->
     <script type="text/javascript">
       window.onload = function(){
       (function(d, script) {
@@ -28,7 +21,16 @@
       }(document));
       };
       </script>
-      
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo/favicon.png" type="image/x-icon">
+        
+   <title>Viatec Brasil</title>
+    
 </head>
 <body>
     <header>
@@ -40,7 +42,9 @@
         <li><a href="#home" onclick="toggleMenu();">Início</a></li>
         <li><a href="#about" onclick="toggleMenu();">Sobre Nós</a></li>
         <li><a href="#company" onclick="toggleMenu();">Parcerias</a></li>
+        <li><a href="#consulting" onclick="toggleMenu();">Consultorias</a></li>
         <li><a href="#products" onclick="toggleMenu();">Produtos</a></li>
+        <li><a href="#blog" onclick="toggleMenu();">Eventos</a></li>
         <li><a href="#contact" onclick="toggleMenu();">Contato</a></li>
         
         <li><a href=""> <div class="socials">
@@ -61,11 +65,11 @@
         </div>
         
          <div class="mySlides fade">
-        <img src="./images/istockphoto-1091365146-2048x2048.jpg" class="cover-main" alt="imagem de fundo">
+        <img src="./images/istockphoto-1091365146-2048x2048.jpg" class="cover-main" alt="imagem de fundo" loading="lazy">
         </div>
         
           <div class="mySlides fade">
-        <img src="./images/istockphoto-656817802-2048x2048.jpg" class="cover-main" alt="imagem de fundo">
+        <img src="./images/istockphoto-656817802-2048x2048.jpg" class="cover-main" alt="imagem de fundo" loading="lazy">
         </div>
         
         <div class="contentBx">
@@ -89,7 +93,7 @@
                 </div>
                 <div class="content">
                     <div class="imgBx">
-                        <img src="images/istockphoto-1091365146-2048x2048.jpg" class="cover" alt="guindaste içando">
+                        <img src="images/istockphoto-1091365146-2048x2048.jpg" class="cover" alt="guindaste içando" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -117,6 +121,27 @@
         <p>&nbsp;&nbsp;&nbsp;&nbsp;A Seyconel, idealizada por Edson Achy, teve sua origem na distribuição de componentes e equipamentos eletroeletrônicos e automotivos. Em uma evolução estratégica, a empresa expandiu sua atuação, incorporando à sua linha de produtos uma gama diversificada de equipamentos direcionados à movimentação de carga. 
         <br><br>&nbsp;&nbsp;&nbsp;&nbsp;O acréscimo incluiu, inicialmente, controles remotos industriais e balanças específicas para ponte rolante. Essa expansão demonstra o compromisso contínuo da Seyconel em atender às demandas do mercado, proporcionando soluções inovadoras e eficientes.</p>
     </div>
+    </section>
+    
+    <!-- Consultorias -->
+    <section class="consulting" id="consulting">
+          <div class="title">
+            <h2>Consultorias</h2>
+        
+            <div class="contentBx">
+                <div class="content">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima placeat voluptate accusamus beatae quasi blanditiis mollitia dignissimos. Quisquam ex in numquam facilis aspernatur nulla obcaecati quo, neque praesentium corporis, quidem corrupti. Atque voluptas reprehenderit in accusantium corporis, consequuntur praesentium aliquam vero qui laborum. Magni assumenda, doloremque ipsam qui ab quasi beatae nam vero atque accusamus unde totam corrupti at facere..</p>
+                    
+                </div>
+            </div>
+          </div>
+        
+        <div class="title">
+            <a href="#consulting" class="btn mgt60">Faça Sua Consultoria Aqui</a>
+        </div>
+          
+          
+          
     </section>
     
     <!-- Produtos -->
@@ -176,39 +201,7 @@
                 <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, sed! Fuga labore exercitationem voluptas nostrum ipsum asperiores, aperiam laborum! Beatae.</h3>
                     <a href="#" class="btn">Faça seu Orçamento Aqui</a>
             </div>
-        </div>
-   
-    
-     
-        <div class="card">
-            <img src="./images/placeholder.jpg" alt="placeholder" >
-            <div class="cardContent">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, sed! Fuga labore exercitationem voluptas nostrum ipsum asperiores, aperiam laborum! Beatae.</h3>
-                    <a href="#" class="btn">Faça seu Orçamento Aqui</a>
-            </div>
-        </div>
-    
-    
-   
-        <div class="card">
-            <img src="./images/placeholder.jpg" alt="placeholder" >
-            <div class="cardContent">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, sed! Fuga labore exercitationem voluptas nostrum ipsum asperiores, aperiam laborum! Beatae.</h3>
-                    <a href="#" class="btn">Faça seu Orçamento Aqui</a>
-            </div>
-        </div>
-    
-    
-    
-        <div class="card">
-            <img src="./images/placeholder.jpg" alt="placeholder" >
-            <div class="cardContent">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, sed! Fuga labore exercitationem voluptas nostrum ipsum asperiores, aperiam laborum! Beatae.</h3>
-                    <a href="#" class="btn">Faça seu Orçamento Aqui</a>
-            </div>
-        </div>
-   
-    
+        </div>    
      
         <div class="card">
             <img src="./images/placeholder.jpg" alt="placeholder" >
@@ -219,110 +212,71 @@
         </div>
     </div>
     </div>
-    
-    <!-- <div class="contentBx">
-        <div class="postColumn">
-            <div class="postBx">
-                <div class="imgBx">
-                    <img src="./images/placeholder.jpg" class="cover" alt="">
-                </div>
-                <div class="textBx">
-                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, sed! Fuga labore exercitationem voluptas nostrum ipsum asperiores, aperiam laborum! Beatae.</h3>
-                    <a href="#" class="btn">Faça seu Orçamento Aqui</a>
-                </div>
-            </div>
-            <div class="postBx">
-                <div class="imgBx">
-                    <img src="./images/placeholder.jpg" class="cover" alt="">
-                </div>
-                <div class="textBx">
-                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, sed! Fuga labore exercitationem voluptas nostrum ipsum asperiores, aperiam laborum! Beatae.</h3>
-                    <a href="#" class="btn">Faça seu Orçamento Aqui</a>
-                </div>
-            </div>
-            <div class="postBx">
-                <div class="imgBx">
-                    <img src="./images/placeholder.jpg" class="cover" alt="">
-                </div>
-                <div class="textBx">
-                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, sed! Fuga labore exercitationem voluptas nostrum ipsum asperiores, aperiam laborum! Beatae.</h3>
-                    <a href="#" class="btn">Faça seu Orçamento Aqui</a>
-                </div>
-            </div>
-            
-            
-        </div>
         
-      
-        
-        <div class="postColumn">
-            <div class="postBx">
-                <div class="imgBx">
-                    <img src="./images/placeholder.jpg" class="cover" alt="">
-                </div>
-                <div class="textBx">
-                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, sed! Fuga labore exercitationem voluptas nostrum ipsum asperiores, aperiam laborum! Beatae.</h3>
-                    <a href="#" class="btn">Faça seu Orçamento Aqui</a>
-                </div>
-            </div>
-            <div class="postBx">
-                <div class="imgBx">
-                    <img src="./images/placeholder.jpg" class="cover" alt="">
-                </div>
-                <div class="textBx">
-                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, sed! Fuga labore exercitationem voluptas nostrum ipsum asperiores, aperiam laborum! Beatae.</h3>
-                    <a href="#" class="btn">Faça seu Orçamento Aqui</a>
-                </div>
-            </div>
-            <div class="postBx">
-                <div class="imgBx">
-                    <img src="./images/placeholder.jpg" class="cover" alt="">
-                </div>
-                <div class="textBx">
-                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, sed! Fuga labore exercitationem voluptas nostrum ipsum asperiores, aperiam laborum! Beatae.</h3>
-                    <a href="#" class="btn">Faça seu Orçamento Aqui</a>
-                </div>
-            </div>
-    </div>
-    
-  
- <div class="postColumn">
-            <div class="postBx">
-                <div class="imgBx">
-                    <img src="./images/placeholder.jpg" class="cover" alt="">
-                </div>
-                <div class="textBx">
-                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, sed! Fuga labore exercitationem voluptas nostrum ipsum asperiores, aperiam laborum! Beatae.</h3>
-                    <a href="#" class="btn">Faça seu Orçamento Aqui</a>
-                </div>
-            </div>
-            <div class="postBx">
-                <div class="imgBx">
-                    <img src="./images/placeholder.jpg" class="cover" alt="">
-                </div>
-                <div class="textBx">
-                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, sed! Fuga labore exercitationem voluptas nostrum ipsum asperiores, aperiam laborum! Beatae.</h3>
-                    <a href="#" class="btn">Faça seu Orçamento Aqui</a>
-                </div>
-            </div>
-            <div class="postBx">
-                <div class="imgBx">
-                    <img src="./images/placeholder.jpg" class="cover" alt="">
-                </div>
-                <div class="textBx">
-                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, sed! Fuga labore exercitationem voluptas nostrum ipsum asperiores, aperiam laborum! Beatae.</h3>
-                    <a href="#" class="btn">Faça seu Orçamento Aqui</a>
-                </div>
-            </div>
-    </div>
-     -->
-   
-    
     <div class="title">
-    <a href="#" class="btn mgt60">Ver Mais</a>
+    <a href="./produtos.html" class="btn mgt60">Ver Mais</a>
     </div>
     </section>
 
+        <!-- Blog -->
+    
+    <section class="blog" id="blog">
+        <div class="title">
+        <h2>Eventos</h2>
+         <div class="content">
+        <p>Fotos dos Eventos</p>
+        </div>   
+        </div>
+            
+        
+        <div class="container">
+        <div class="gallery">
+            <a href="./images/gallery/img1.jpg" data-lightbox="foto1" data-title="caption1" loading="lazy">
+                <img src="./images/gallery/img1.jpg" alt="" srcset="" loading="lazy">
+            </a>
+            
+             <a href="./images/gallery/img2.jpg" data-lightbox="foto1" data-title="caption1" loading="lazy">
+                <img src="./images/gallery/img2.jpg" alt="" loading="lazy">
+            </a>
+            
+             <a href="./images/gallery/img3.jpg" data-lightbox="foto1" data-title="caption1" loading="lazy">
+                <img src="./images/gallery/img3.jpg" alt="" loading="lazy">
+            </a>
+            
+             <a href="./images/gallery/img4.jpg" data-lightbox="foto1" data-title="caption1" loading="lazy">
+                <img src="./images/gallery/img4.jpg" alt="" loading="lazy">
+            </a>
+            
+             <!-- <a href="./images/gallery/img5.jpg" data-lightbox="foto1" data-title="caption1" loading="lazy">
+                <img src="./images/gallery/img5.jpg" alt="" loading="lazy">
+            </a>
+            
+             <a href="./images/gallery/img6.jpg" data-lightbox="foto1" data-title="caption1" loading="lazy">
+                <img src="./images/gallery/img6.jpg" alt="" loading="lazy">
+            </a>
+            
+             <a href="./images/gallery/img7.jpg" data-lightbox="foto1" data-title="caption1" loading="lazy">
+                <img src="./images/gallery/img7.jpg" alt="" loading="lazy">
+            </a>
+            
+             <a href="./images/gallery/img8.jpg" data-lightbox="foto1" data-title="caption1" loading="lazy">
+                <img src="./images/gallery/img8.jpg" alt="" loading="lazy">
+            </a>
+             -->
+        </div>
+    </div>
+     
+        
+     
+     
+    <div class="title">
+    <a href="#see-more" class="btn-see mgt60">Ver Mais</a>
+    </div>
+    
+
+    </section>
+    
+    
     <!-- Contato -->
     
      <section class="contact" id="contact">
@@ -369,7 +323,9 @@
             <li><a href="#home">Início</a></li>
             <li><a href="#about">Sobre Nós</a></li>
             <li><a href="#company">Parcerias</a></li>
+         
             <li><a href="#products">Produtos</a></li>
+            <li><a href="#blog">Eventos</a></li>
             <li><a href="#contact">Contato</a></li>
         </ul>
         <p class="copyrightText">2023 Viatec Brasil</p>
