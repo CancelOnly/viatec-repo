@@ -71,7 +71,7 @@ header.sticky {
 
 .navigation li a {
   color: var(--blue);
-  font-size: 1em;
+  font-size: 0.9em;
   /* letter-spacing: 4px; */
   display: inline-block;
   font-weight: 500;
@@ -184,7 +184,7 @@ section {
 
 /* Button CSS */
 
-.btn {
+.btn-see {
   align-items: center;
   background-clip: padding-box;
   background-color: #fa6400;
@@ -215,23 +215,23 @@ section {
   width: auto;
 }
 
-.btn:hover,
-.btn:focus {
+.btn-see:hover,
+.btn-see:focus {
   background-color: #fb8332;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
-.btn:hover {
+.btn-see:hover {
   transform: translateY(-1px);
 }
 
-.btn:active {
+.btn-see:active {
   background-color: #c85000;
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   transform: translateY(0);
 }
 
-.btn-see {
+.btn {
   align-items: center;
   background-clip: padding-box;
   background-color: var(--blue);
@@ -262,17 +262,17 @@ section {
   width: auto;
 }
 
-.btn-see:hover,
-.btn-see:focus {
+.btn:hover,
+.btn:focus {
   background-color: #493fd8;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
-.btn-see:hover {
+.btn:hover {
   transform: translateY(-1px);
 }
 
-.btn-see:active {
+.btn:active {
   background-color: #08daff;
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   transform: translateY(0);
@@ -381,6 +381,13 @@ p {
   height: 100px;
   margin-top: 10px;
   position: relative;
+}
+
+.consulting {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
 
 .products {
